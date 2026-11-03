@@ -105,3 +105,135 @@ h2 {
   margin: 0 0 12px;
   padding-left: 24px;
 }
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #111827;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.comment-form input::placeholder,
+.comment-form textarea::placeholder {
+  color: #6b7280;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.comment-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.hint {
+  margin: 10px 0 16px;
+  color: #6b7280;
+}
+
+.btn-publish {
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-publish:hover {
+  opacity: 0.9;
+}
+
+.error {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.error:empty {
+  display: none;
+}
+
+.card > .comments-title {
+  margin-top: 24px;
+}
+
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.comment {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.comment-author {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.comment-text {
+  margin: 0 0 10px;
+  overflow-wrap: anywhere;
+}
+
+.btn-delete {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: #dc2626;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #fee2e2;
+}
+
+.site-footer {
+  padding: 16px;
+  border-top: 1px solid #e5e7eb;
+  color: #6b7280;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
